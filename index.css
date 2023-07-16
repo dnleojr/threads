@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'actay_condensedthin';
+    src: url('/fonts/actaycondensed-thin-webfont.woff2') format('woff2'),
+         url('/fonts/actaycondensed-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'actayregular';
+    src: url('/fonts/actay-regular-webfont.woff2') format('woff2'),
+         url('/fonts/actay-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'actay_widebold';
+    src: url('/fonts/actaywide-bold-webfont.woff2') format('woff2'),
+         url('/fonts/actaywide-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.body{
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+.navbar{
+    width: 100vw;
+    height: 8vh;
+    display: grid;
+    grid-template-columns: 33vw;
+    grid-template-areas:
+    "logo menu icons";
+    background-color: black;
+}
+
+.navbar p{
+    color: white;
+    font-family: "actayregular";
+    font-size: 1.5vh
+}
+
+.logo{
+    margin-left: 10vw;
+    grid-area: logo;
+    background-image: url(/picts/logo/logo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.menu{
+    grid-area: menu;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.icons{
+    margin-right: 10vw;
+    grid-area: icons;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.material-symbols-outlined{
+    margin: 0;
+    color: white;
+}
+
+.video{
+    height: 92vh;
+    display: flex;
+}
+
+.video video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.products{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.newarrivalstext{
+    margin: 1.5vw 10vw 1.5vw 10vw;
+}
+
+.newarrivalstext p{
+    margin: 0;
+    font-family: "actay_widebold";
+    font-size: 5vh;
+}
+
+.productlist{
+    margin: 0 10vw 0 10vw;
+    height: 100%;
+    max-width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.productlist div{
+    margin: 1vh 0 0 0;
+}
+
+.productlist div p{
+    font-family: "actayregular";
+    margin: 0 3vw 0 3vw;
+}
+
+img{
+    max-width: 20vw;
+}
+
+img:hover{
+    opacity: 50%;
+}
